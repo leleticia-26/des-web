@@ -1,0 +1,361 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html {
+  font-size: clamp(1rem, 2vw + 0.8rem, 3rem);
+}
+
+body {
+  background-color: #e9eaf8;
+}
+
+header {
+  padding: 5vw;
+  text-align: center;
+  background-color: #e9eaf8;
+}
+
+header img {
+  padding: 3vw;
+}
+
+header ul {
+  padding: 3vw;
+}
+
+header ul li {
+  padding: 2vw;
+  font-size: 0.7rem;
+}
+
+header ul li:hover {
+  color: #747ed1;
+}
+
+header p {
+  padding: 3vw;
+}
+
+header p a {
+  background-color: #747ed1;
+  padding: 3vw 4vw;
+  border-radius: 6vw;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+header p a:hover {
+  color: #747ed1;
+  background-color: #e9eaf8;
+  border: 2px solid #747ed1;
+  font-weight: 550;
+}
+
+section.banner {
+  background-color: #51225e;
+  padding: 10vw 5vw;
+  border-radius: 3vw;
+  display: inline-block;
+  text-align: center;
+  margin: 3vw;
+}
+
+section.banner h1 {
+  color: white;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 7vw 3vw 2vw 3vw;
+}
+
+section.banner p {
+  color: white;
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 3vw 3vw 7vw 3vw;
+}
+
+section.celular {
+  background-color: white;
+  padding: 10vw 5vw;
+  border-radius: 3vw;
+  display: inline-block;
+  text-align: center;
+  margin: 3vw;
+}
+
+section.celular div img {
+  padding: 3vw;
+  width: 15%;
+}
+
+section.celular div h2 {
+  padding: 3vw;
+  font-size: 1.5rem;
+  font-weight: 520;
+}
+
+section.celular div p {
+  padding: 3vw;
+  display: inline-block;
+  font-size: 0.5rem;
+  color: rgb(46, 46, 46);
+  text-align: left;
+}
+
+section.celular div button {
+  color: #747ed1;
+  background-color: #e9eaf8;
+  padding: 4vw 5vw;
+  border-radius: 6vw;
+  font-size: 0.5rem;
+  text-align: left;
+
+}
+
+section.celular div button:hover {
+  background-color: white;
+  border: 2px solid #e9eaf8;
+
+}
+
+section.video {
+  background-color: white;
+  padding: 10vw 5vw;
+  border-radius: 3vw;
+  display: inline-block;
+  text-align: center;
+  margin: 3vw;
+}
+
+section.video ul li img{
+  width: 10%;
+  height: 10%;
+  padding: 3vw;
+}
+
+section.video h3 {
+  padding: 4vw;
+  font-size: 1.7rem;
+  font-weight: 520;
+  display: inline-block;
+}
+
+section.video h3 span {
+  color: #747ed1;
+  border-bottom: 2px solid #747ed1;
+}
+
+section.video ul {
+  padding: 4vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section.video ul li {
+  padding: 4vw;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+section.video ul li h4 {
+  padding: 3vw;
+  font-size: 0.9rem;
+  font-weight: 550;
+}
+
+section.video ul li p {
+  padding: 0 3vw 3vw 3vw;
+  font-size: 0.8rem;
+  display: inline-block;
+  color: rgb(39, 39, 39);
+}
+
+footer {
+  background-color: #21262c;
+  padding: 10vw 5vw;
+  border-radius: 3vw;
+  text-align: center;
+  margin: 3vw;
+}
+
+footer p {
+  color: white;
+  padding: 3vw;
+  font-size: 0.6rem;
+}
+
+footer ul {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  padding: 0 3vw;
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media screen and (min-width: 600px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+  }
+
+  header img {
+    width: 15%;
+    height: 15%;
+    max-width: 15%;
+    max-height: 15%;
+  }
+
+  header ul {
+    padding: 1vw;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  header ul li {
+    padding: 2vw;
+    font-size: 0.5rem;
+  }
+
+  header p {
+    padding: 1vw;
+  }
+
+  header p a {
+    padding: 1vw 2vw;
+    font-size: 0.6rem;
+  }
+
+  section.banner {
+    padding: 8vw 20vw;
+  }
+
+  section.banner h1 {
+    font-size: 1.5rem;
+    padding: 3vw 3vw 2vw 3vw;
+  }
+
+  section.banner p {
+    font-size: 0.5rem;
+    padding: 3vw;
+    display: inline-block;
+  }
+
+  section.celular {
+    justify-content: space-between;
+  }
+
+  section.celular div.pai {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.celular div {
+    align-items: center;
+  }
+
+  section.celular div img {
+    width: 300%;
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  section.celular div h2 {
+    padding: 2vw 2vw;
+    font-size: 1.3rem;
+    text-align: left;
+    width: 70%;
+  }
+
+  section.celular div p {
+    padding: 2vw;
+    display: block;
+    font-size: 0.5rem;
+    text-align: left;
+    width: 70%;
+  }
+
+  section.celular div p a {
+    padding: 1vw 2vw;
+    display: inline-block;
+    font-size: 0.5rem;
+  }
+
+  section.video {
+    text-align: center;
+    padding: 10vw 5vw;
+    display: inline-block;
+    margin: 3vw;
+  }
+
+  section.video video {
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+  }
+
+  section.video h2 {
+    padding: 4vw;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  section.video ul {
+    padding: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  section.video ul li {
+    padding: 2vw;
+  }
+
+  section.video ul li img {
+    padding: 3vw 3vw 0 3vw;
+    width: 70%;
+  }
+
+  section.video ul li h3 {
+    padding: 1vw;
+    font-size: 0.7rem;
+  }
+
+  section.video ul li p {
+    padding: 0 1vw 1vw 1vw;
+    font-size: 0.5rem;
+  }
+
+  footer {
+    padding: 3vw;
+    align-items: center;
+  }
+
+  footer p {
+    padding: 1vw;
+    font-size: 0.4rem;
+  }
+
+  footer ul li {
+    padding: 0 2vw;
+  }
+}
