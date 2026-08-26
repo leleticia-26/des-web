@@ -1,0 +1,95 @@
+html {
+  font-size: clamp(1rem, calc(0.5rem + 1vw), 1.625rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a.butão{
+  background-color: #96BB7C;
+  color: white;
+  padding: 4px 16px 4px 16px;
+  border-radius: 4px;
+}
+a.butão:hover{
+background-color: #577444;
+}
+a.btn-border{
+  border: 2px solid #96BB7C;
+  color: #96BB7C;
+  padding: 4px 16px 4px 16px;
+  border-radius: 4px;
+}
+a.btn-border:hover{
+  background-color: #577444;
+  color: white;
+}
+
+header {
+background-color: #FFF2F3;
+display: flex;
+justify-content: space-between;
+padding: 3vw 6vw 3vw 6vw;
+}
+header nav ul{
+display: flex;
+gap: 20px;
+font-size: 0.8rem;
+}
+header h1{
+  font-weight: bold;
+}
+
+section.banner{
+  background: #FFF2F3;
+  padding: 3vw 10vw 0vw 10vw;
+  display: flex;
+  gap: 15vw;
+}
+section.banner h3{
+  color: #96BB7C;
+  padding: 2vw 0vw 0vw 0vw;
+}
+section.banner h2{
+font-size: 2rem;
+color: black;
+font-weight: bold;
+padding: 0vw 0vw 2vw 0vw;
+}
+section.banner p{
+  padding: 0vw 0vw 2vw 0vw;
+  color: #737373;
+}
+section.team{
+  padding: 3vw 6vw 3vw 6vw;
+}
+section.team ul{
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  padding: 3vw 0vw 0vw 0vw;
+}
+section.team ul li{
+  width: 15%;
+  background-color: #ECF0E8;
+  text-align: center;
+  font-size: 0.8rem;
+}
+section.team ul li img{
+  width: 100%;
+}
+section.team h3{
+  color: #96BB7C;
+  font-size: 0.7rem;
+  padding: 1vw 0vw 1vw 0vw;
+}
+section.team h2{
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+section.team p{
+  font-size: 0.7rem;
+  color: #737373;
+  padding: 1vw 0vw 1vw 0vw;
+}
+section.team h4{
+  font-weight: bold;
+}
